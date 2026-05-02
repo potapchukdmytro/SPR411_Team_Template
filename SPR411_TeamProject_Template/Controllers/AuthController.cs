@@ -12,10 +12,16 @@ namespace SPR411_TeamProject_Template.Controllers
             return Ok("Hello World");
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public IActionResult Login()
         {
             return Ok("Login");
+        }
+
+        [HttpPost("register")]
+        public IActionResult Register()
+        {
+            return Ok("Register");
         }
     }
 }
